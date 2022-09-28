@@ -36,9 +36,11 @@
       <section class="catalog-filter">
         <h1 class="cataloge-filter-title">Гостиницы Седоны </h1>
         <ul class="extra-link">
-          <li><a href="index.html"><img class="house-picture" src="" alt="картнка домика"></a></li>
-            <!--<span>&gt;</span> Этот элемент декаративный?-->
-          <li><a href="#">Гостиницы</a>
+          <li>
+            <a href="index.html"><img class="house-picture" src="" alt="картнка домика"></a>
+          </li>
+          <li>
+            <a href="#">Гостиницы</a>
           </li>
         </ul>
         <h2 class="visually-hidden">Фильтр</h2>
@@ -72,7 +74,7 @@
           </ul>
 
 
-          <h3 class="filtre-price prcice">Стоимость, &#8381;:</h3>
+          <h3 class="filtre-price price">Стоимость, &#8381;:</h3>
           <input class="price-filter" type="text" value="0 от">
           <input class="price-filter" type="text" value="9000 до">
           <button class="use" type="submit" value="Применить">Применить</button>
@@ -88,13 +90,13 @@
             <option class="control">Сначала дорогие</option>
             <option class="control">Сначала популярные</option>
           </select>
-          <a href="#" class="active-button">
+          <a href="#" class="grid-button grid-button-active">
             <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a class="active-button" href="#">
+          <a class="grid-button" href="#">
             <span class="visually-hidden">Показать слайдшоу </span>
           </a>
-          <a class="active-button" href="#">
+          <a class="grid-button" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
         </header>
@@ -102,7 +104,7 @@
       <section>
         <ul class="product-list">
           <li class="product-card">
-            <a href="#">
+            <a class="product-card-image" href="#">
               <img class="product-card-image" src="" alt="Амара Резорт & СПА">
             </a>
             <a href="#">
@@ -116,7 +118,7 @@
           </li>
 
            <li class="product-card">
-            <a href="#">
+            <a class="product-card-image" href="#">
               <img class="product-card-image" src="" alt="Виллас эт Поко Диабло">
               </a>
             <a href="#">
@@ -130,7 +132,7 @@
           </li>
 
           <li class="product-card">
-            <a href="#">
+            <a class="product-card-image" href="#">
               <img class="product-card-image" src="" alt="Дезерт Квэил Инн">
             </a>
             <a href="#">
@@ -144,7 +146,7 @@
           </li>
 
           <li class="product-card">
-            <a href="#">
+            <a class="product-card-image" href="#">
               <img class="product-card-image" src="" alt="ГринТрии Шнн">
             </a>
             <a href="#">
@@ -223,4 +225,3 @@
 
   </body>
   </html>
-<!-- Не отправлялся комит в пул реквест, потом удалю эту строку-->

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -14,10 +15,10 @@
           <li class="navigation-link">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
-          <li>
+          <li class="navigation-link">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li>
+          <li class="navigation-link">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
@@ -33,7 +34,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-button" href="#">Хочу сюда</a>
+            <a class="navigation-link-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -51,9 +52,9 @@
       <section class="advantages">
         <h2 class="visually-hidden">Приемущества</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <li class="advantages-item-dark">
+            <h3 class="advantages-title-white">Настоящий городок</h3>
+            <p class="advantages-description-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="town-picture" src="images/index/town.jpg" width="800" height="384" alt="город">
           </li>
 
@@ -62,7 +63,7 @@
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
 
-          <li class="advantages-item">
+          <li class="advantages-item-bright">
             <h3 class="advantages-title">Красивая дорога</h3>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
@@ -72,11 +73,15 @@
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
 
-          <li class="advantages-item">
+          <li class="advantages-item-dark">
             <img class="bridge-picture" src="images/index/bridge.jpg" width="800" height="384" alt="моста дьявола">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <h3 class="advantages-title-white">Там есть мост дьявола</h3>
+            <p class="advantages-description-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
+
+
+
+
 
           <li class="advantages-item">
             <img class="advantages-picture" src="images/index/house.svg" width="75" height="72" alt="домик">
@@ -86,7 +91,7 @@
 
 
 
-          <li class="advantages-item">
+          <li class="advantages-item-white">
             <img class="advantages-picture" src="images/index/food.svg" width="74" height="70" alt="бургер">
             <h3 class="advantages-title">Еда</h3>
             <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
@@ -116,8 +121,8 @@
           <button class="distribution-button" type="submit" name="button" value="Подписаться">Подписаться</button>
         </form>
       </section>
-
     </main>
+
     <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -146,7 +151,7 @@
       <section class="footer-logo">
         <h2 class="visually-hidden">Логотип</h2>
         <a class="logo-link" href="https://htmlacademy.ru">
-          <img class="footer-logo-link" src="images/common/html-logo.svg" width="114.9" height="32.9" alt="Логотип HTMLAcademy">
+          <img class="footer-logo-link" src="images/common/html-logo.svg" width="115" height="33" alt="Логотип HTMLAcademy">
         </a>
       </section>
     </footer>

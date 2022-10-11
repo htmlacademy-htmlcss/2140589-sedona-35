@@ -19,13 +19,17 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  color: #000000;
-  background-color: #F2F2F2;
+  color: #333333;
+}
+
+.bkcolor-shadow {
+  width: 1200px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
   background-color: #FFFFFF;
-  text-align: center;
 }
 
 .navigation-link {
@@ -43,21 +47,17 @@ body {
 .navigation-link-button {
   background: #756157;
   border-radius: 4px;
-  width: 160px;
-  height: 36px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 8px 50px;
-  gap: 10px;
+  padding: 8px 20px;
   text-decoration: none;
 }
 
 .main-index {
   background-color: #FFFFFF;
-  color: #000000;
 }
 
 .main-picture {
@@ -68,7 +68,7 @@ body {
 }
 
 .reason {
-  height: 282px;
+  min-height: 282px;
   text-align: center;
 }
 
@@ -77,12 +77,12 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .why-sedona {
   font-size: 22px;
   line-height: 26px;
-  color: #333333;
 }
 
 
@@ -93,20 +93,18 @@ body {
 
 .advantages-item-dark {
   background-color: #82B3D3;
+  color: #FFFFFF;
 }
 
 .advantages-title-white {
+  color: #FFFFFF;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  color: #FFFFFF;
   text-transform: uppercase;
 }
 
-.advantages-description-white {
-  color: #FFFFFF;
-  line-height: 21px;
-}
+
 
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
@@ -121,7 +119,6 @@ body {
 }
 
 .advantages-description {
-  color: #333333;
   line-height: 21px;
 }
 
@@ -149,12 +146,11 @@ body {
 .interested-description {
   font-size: 22px;
   line-height: 26px;
-  color: #333333;
 }
 
 .interested-button {
   width: 376px;
-  height: 52px;
+  padding: 8px, 50px, 8px, 50px;
   background: #756157;
   border-radius: 4px;
   text-align: center;
@@ -174,12 +170,12 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .distribution-description {
   font-size: 22px;
   line-height: 26px;
-  color: #333333;
 }
 
 .distribution-button {
@@ -206,24 +202,12 @@ body {
   color: #000000;
 }
 
-.navigation-link-current {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  color: #000000;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: capitalize;
-  background-color: #FFFFFF;
-  text-decoration: none;
-  text-align: center;
-}
 
 .catalog-filter {
   background-image: url("../images/catalog/background-filter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: #F2F2F2;
+  background-color: #756157;
   color: #FFFFFF;
 }
 
@@ -237,7 +221,7 @@ body {
   font-size: 16px;
 }
 
-.extra-link-hotels {
+.breadcrumbs-link {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -253,7 +237,7 @@ body {
   line-height: 23px;
 }
 
-.filtre-price {
+.filter-price {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -262,18 +246,19 @@ body {
 
 .price-filter {
   width: 143px;
-  height: 48px;
   background: #F2F2F2;
   border-radius: 4px;
+  padding: 12px 20px 12px 20px;
 }
 
 .filter-label {
   line-height: 24px;
+  color: #FFFFFF;
 }
 
 .use {
+  padding: 8px 50px 8px 50px;
   width: 191px;
-  height: 36px;
   background: #82B3D3;
   border-radius: 4px;
 }
@@ -287,9 +272,10 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color: #000000;
 }
 
-.control {
+control {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -313,15 +299,11 @@ body {
   text-decoration: none;
 }
 
-.product-item {
-  color: #333333;
-}
+
 
 .product-description {
   width: 140px;
-  height: 36px;
   padding: 8px 50px;
-  gap: 10px;
   background: #756157;
   border-radius: 4px;
   font-weight: 700;
@@ -335,9 +317,7 @@ body {
 
 .product-selected {
   width: 140px;
-  height: 36px;
   padding: 8px 50px;
-  gap: 10px;
   background: #82B3D3;
   border-radius: 4px;
   font-weight: 700;
@@ -351,29 +331,16 @@ body {
 
 .rating {
   width: 140px;
-  height: 36px;
   padding: 8px 50px;
-  gap: 10px;
   background: #F2F2F2;
   border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
   text-decoration: none;
 }
 
-.pagination-link-current {
-  background: #F2F2F2;;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-}
 
 .pagination-link {
   background: #82B3D3;
@@ -385,4 +352,9 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.pagination-link-current {
+  background: #F2F2F2;
+  color: #000000;
 }

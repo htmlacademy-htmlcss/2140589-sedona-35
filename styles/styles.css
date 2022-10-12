@@ -150,7 +150,7 @@ body {
 
 .interested-button {
   width: 376px;
-  padding: 8px, 50px, 8px, 50px;
+  padding: 8px 50px 8px 50px;
   background: #756157;
   border-radius: 4px;
   text-align: center;
@@ -224,6 +224,7 @@ body {
 .breadcrumbs-link {
   color: #FFFFFF;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .filter-title {

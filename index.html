@@ -13,13 +13,13 @@
             <img class="logo" src="images/common/logo.svg" width="140" height="71" alt="Логотип Седона">
           </a>
           <ul class="navigation-list">
-            <li class="navigation-link">
+            <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
-            <li class="navigation-link">
+            <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
-            <li class="navigation-link">
+            <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
@@ -40,7 +40,7 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container main-index">
+      <main class="main-index">
         <div class="main-picture">
           <h1 class="visually-hidden">Седона</h1>
           <img class="welcome" src="images/index/welcome.svg" width="458" height="352" alt="Добро пожаловать">
@@ -54,13 +54,13 @@
           <h2 class="visually-hidden">Приемущества</h2>
           <ul class="advantages-list">
             <li class="advantages-item-dark">
-              <h3 class="advantages-title-white">Настоящий городок</h3>
-              <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </li>
-
-            <li class="advantages-pictrue">
+              <div class="advantages-text-dark">
+                <h3 class="advantages-title-white">Настоящий городок</h3>
+                <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
               <img class="town-picture" src="images/index/town.jpg" width="800" height="384" alt="город">
             </li>
+
 
             <li class="advantages-item">
               <h3 class="advantages-title">Небольшая площадь</h3>
@@ -77,13 +77,14 @@
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
 
-            <li class="advantages-pictrue">
-              <img class="bridge-picture" src="images/index/bridge.jpg" width="800" height="384" alt="моста дьявола">
-            </li>
+
 
             <li class="advantages-item-dark">
-              <h3 class="advantages-title-white">Там есть мост дьявола</h3>
-              <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <img class="bridge-picture" src="images/index/bridge.jpg" width="800" height="384" alt="моста дьявола">
+              <div class="advantages-text-dark">
+                <h3 class="advantages-title-white">Там есть мост дьявола</h3>
+                <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
             </li>
 
 
@@ -118,9 +119,9 @@
         </section>
 
         <section class="index-distribution">
-          <div class="index-distribution-container">
-            <h3 class="index-distribution-title">Подпишитесь на рассылку</h3>
-            <p class="index-distribution-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <div class="distribution-container">
+            <h3 class="distribution-title">Подпишитесь на рассылку</h3>
+            <p class="distribution-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="distribution-email" action="https://echo.htmlacademy.ru/" method="post">
               <input class="email" type="email" name="email" placeholder="Ваш e-mail">
               <button class="distribution-button" type="submit" name="button" value="Подписаться">Подписаться</button>
@@ -136,17 +137,17 @@
               <ul class="footer-social-list">
                 <li class="footer-social-item">
                   <a class="social-link" href="https://vk.com/htmlacademy">
-                    <img class="button-social-link" src="images/common/vkontakte.svg" width="24" height="14" alt="Переход на страницу Вконтакте">
+                    <img class="button-social-link" src="images/common/vkontakte.svg" width="48" height="14" alt="Переход на страницу Вконтакте">
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="social-link" href="https://t.me/htmlacademy">
-                    <img class="button-social-link" src="images/common/telegram.svg" width="18" height="15" alt="Переход на страницу В телеграмм">
+                    <img class="button-social-link" src="images/common/telegram.svg" width="48" height="15" alt="Переход на страницу В телеграмм">
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-                    <img class="button-social-link" src="images/common/youtube.svg" width="22" height="17" alt="Переход на страницу В телеграмм">
+                    <img class="button-social-link" src="images/common/youtube.svg" width="48" height="17" alt="Переход на страницу В телеграмм">
                   </a>
                 </li>
               </ul>

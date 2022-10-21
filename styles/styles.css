@@ -95,8 +95,9 @@ body {
   text-align: center;
 }
 
-
-
+.navigation-list-user .navigation-link {
+  padding: 18px 12px;
+}
 
 .navigation-link-button {
   background: #756157;
@@ -121,7 +122,7 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 82px;
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -132,27 +133,32 @@ body {
 }
 
 .reason {
-  min-height: 282px;
   margin: 0;
   text-align: center;
   padding-top: 69px;
   padding-bottom: 90px;
-  padding-left: 274px;
-  padding-right: 274px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .reason-first {
+  width: 620px;
+  text-align: center;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 25px;
 }
 
 .why-sedona {
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages {
@@ -349,21 +355,27 @@ body {
   width: 452px;
   padding: 12px 20px 12px 20px;
   border: 0;
-  border-radius: 4px;
+  border-radius: 4px 0 0 4px;;
   box-sizing: border-box;
 }
 
+
 .distribution-button {
+  font-family: "PT Sans", sans-serif;
+  width: 232px;
+  text-align: center;
   background: #82B3D3;
   border-radius: 0 4px 4px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 8px 50px 8px 50px;
+  padding: 8px 25px 8px 25px;
+  margin: 0;
+  border-style: hidden;
 }
+
 
 .catalog-distribution {
   background-color: #FFFFFF;
@@ -388,12 +400,15 @@ body {
   display: flex;
   width: 1060px;
   margin: 0;
+  padding: 0;
   justify-content: space-between;
 }
 
 .footer-social-list {
   display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .phone-number {
@@ -404,6 +419,7 @@ body {
   text-decoration: none;
   color: #000000;
   margin: 0;
+  padding: 0;
 }
 
 
@@ -422,7 +438,7 @@ body {
 
 .catalog-filter-form {
   display: flex;
-  width: 1060px;
+  width: 100%;
 }
 
 
@@ -433,21 +449,26 @@ body {
 }
 
 .cataloge-filter-title {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   margin-bottom: 8px;
-  margin: 0;
 }
 
-.breadcrumbs-links {
+.breadcrumbs {
   font-size: 16px;
   display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
   color: #FFFFFF;
   text-decoration: none;
+  margin-right: 29px;
 }
 
 .filter-title {
@@ -511,7 +532,7 @@ body {
 .search-header {
   width: 1060px;
   display: flex;
-  justify-content: space-between;
+
 }
 
 .search-catalog {
@@ -526,10 +547,13 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .search-control {
-  justify-content: flex-end;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .control {
@@ -547,6 +571,8 @@ body {
 .product-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .product-card {
@@ -616,11 +642,14 @@ body {
 .pagination {
   width: 1060px;
   display: flex;
-  justify-content: flex-start;
+  margin: 0;
 }
 
 .pagination-item {
-  margin: 8px;
+  margin: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  list-style: none;
 }
 
 

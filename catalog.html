@@ -42,7 +42,6 @@
       </header>
       <main class="main-index">
         <section class="catalog-filter">
-          <div class="catalog-filter-item">
             <h1 class="cataloge-filter-title">Гостиницы Седоны </h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
@@ -106,7 +105,6 @@
                 <button class="remove" type="reset" value="Применить">Сбросить</button>
               </div>
             </form>
-          </div>
         </section>
 
         <section class="search-catalog">
@@ -117,18 +115,20 @@
               <option class="control">Сначала дорогие</option>
               <option class="control">Сначала популярные</option>
             </select>
-            <a class="grid-button grid-button-active" href="#">
-              <span class="visually-hidden">Показать карточки</span>
-              <img class="grid-button-view" src="images/catalog/view-1.svg" width="48" height="48" alt="Показать карточки">
-            </a>
-            <a class="grid-button" href="#">
-              <span class="visually-hidden">Показать слайдшоу</span>
-              <img class="grid-button-view" src="images/catalog/view-2.svg" width="48" height="48" alt="Показать слайдшоу">
-            </a>
-            <a class="grid-button" href="#">
-              <span class="visually-hidden">Показать список</span>
-              <img class="grid-button-view" src="images/catalog/view-3.svg" width="48" height="48" alt="Показать список">
-            </a>
+            <div class="grid-buttons">
+              <a class="grid-button grid-button-active" href="#">
+                <span class="visually-hidden">Показать карточки</span>
+                <img class="grid-button-view" src="images/catalog/view-1.svg" width="48" height="48" alt="Показать карточки">
+              </a>
+              <a class="grid-button" href="#">
+                <span class="visually-hidden">Показать слайдшоу</span>
+                <img class="grid-button-view" src="images/catalog/view-2.svg" width="48" height="48" alt="Показать слайдшоу">
+              </a>
+              <a class="grid-button" href="#">
+                <span class="visually-hidden">Показать список</span>
+                <img class="grid-button-view" src="images/catalog/view-3.svg" width="48" height="48" alt="Показать список">
+              </a>
+            </div>
           </header>
         </section>
         <section class="product">
@@ -214,8 +214,8 @@
 
         <section class="catalog-distribution">
           <div class="distribution-container">
-            <h3 class="distribution-title">Подпишитесь на рассылку</h3>
-            <p class="distribution-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <h3 class="distribution-title catalog-distribution-title">Подпишитесь на рассылку</h3>
+            <p class="distribution-description catalog-distribution-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="distribution-email" action="https://echo.htmlacademy.ru/" method="post">
               <input class="email" type="email" name="email" placeholder="Ваш e-mail">
               <button class="distribution-button" type="submit" name="button" value="Подписаться">Подписаться</button>
@@ -230,7 +230,7 @@
               <h2 class="visually-hidden">Социальные сети</h2>
               <ul class="footer-social-list">
                 <li class="footer-social-item">
-                  <a class="social-link" href="https://vk.com/htmlacademy"> <!-- Тут нужны спаны или правильно их убрал? -->
+                  <a class="social-link" href="https://vk.com/htmlacademy">
                     <img class="button-social-link" src="images/common/vkontakte.svg" width="48" height="14" alt="Переход на страницу Вконтакте">
                   </a>
                 </li>

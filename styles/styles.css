@@ -26,6 +26,9 @@ body {
   color: #333333;
   margin: 0;
   min-height: 100%;
+  width: 1280;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .page-container {
@@ -50,7 +53,9 @@ body {
   padding: 0;
   padding-left: 70px;
   padding-right: 70px;
+  box-sizing: border-box;
 }
+
 
 
 .navigation-list {
@@ -58,7 +63,7 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  padding-right: 280px;
+  margin-right: auto;
   list-style-type: none;
   justify-content: flex-start;
 }
@@ -277,32 +282,37 @@ body {
 }
 
 .interested {
+  margin: 0;
   background-color: #FFFFFF;
-  width: 592px;
-  margin: 0 auto;
+  padding: 96px 70px;
   text-align: center;
-  padding: 96px 304px;
 }
 
+
 .interested-title {
+  width: 297px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 20px;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 20px;
 }
 
+
 .interested-description {
+  width: 592px;
+  margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
-  margin-bottom: 56px;
+  padding-bottom: 54px;
 }
 
 .interested-button {
   width: 376px;
+  margin: 0;
   padding: 8px 50px 8px 50px;
   background: #756157;
   border-radius: 4px;
@@ -458,6 +468,8 @@ body {
 .comfort-items {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
   padding-right: 70px;
 }
 
@@ -476,6 +488,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
@@ -507,6 +520,8 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  margin: 0;
+  padding: 0;
 }
 
 .price-filter {
@@ -520,6 +535,13 @@ body {
 .filter-label {
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.price-label {
+  width: 143px;
+  border-radius:  4px 0 0 4px;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-buttons {
@@ -549,6 +571,7 @@ body {
 
 .search-catalog {
   background-color: #FFFFFF;
+  margin: 0;
   padding-left: 70px;
   padding-right: 70px;
   margin-bottom: 50px;
@@ -568,16 +591,21 @@ body {
 .search-control {
   background-color: #FFFFFF;
   width: 292px;
-  padding-left: 70px;
-  padding-right: 70px;
   border-radius: 4px;
-  margin-right: 80px;
+  margin-left: auto;
+  padding: 14px 20px;
 }
 
 .control {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.grid-buttons {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
 }
 
 .grid-button {
@@ -590,7 +618,8 @@ body {
 .product {
   background-color: #FFFFFF;
   width: 1060px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0 70px;
 }
 
 .product-list {
@@ -598,7 +627,8 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  list-style-type: none;
 }
 
 .product-card {
@@ -606,13 +636,23 @@ body {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   text-align: center;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 5px;
-  margin: 5px;
+  padding: 19px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
+
+.product-card:nth-child(1n) {
+  margin-left: 0;
+}
+
+.product-card:nth-child(3n) {
+  margin-right: 0;
+}
+
 
 .product-card-title-link {
   font-weight: 700;

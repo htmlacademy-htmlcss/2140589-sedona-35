@@ -105,6 +105,11 @@ body {
 }
 
 .navigation-link-button {
+  display: block;
+  box-sizing: border-box;
+  width: 160px;
+  align-items: center;
+  text-align: center;
   background: #756157;
   border-radius: 4px;
   font-weight: 700;
@@ -442,12 +447,15 @@ body {
   padding: 0;
   width: 48px;
   height: 40px;
+  text-align: center;
 }
 
 .social-link {
   box-sizing: border-box;
   display: inline-block;
   padding: 10px;
+  width: 40px;
+  height: 44px;
 }
 
 .phone-number {
@@ -466,11 +474,6 @@ body {
   padding: 0;
 }
 
-.logo-link {
-  display: inline;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 
 .catalog-filter {
   background-image: url("../images/catalog/background-filter.jpg");
@@ -533,6 +536,7 @@ body {
 
 .filter-item {
   line-height: 23px;
+  list-style-type: none;
 }
 
 .form-price {
@@ -548,14 +552,21 @@ body {
   text-transform: capitalize;
   margin: 0;
   padding: 0;
+  margin-bottom: 32px;
 }
 
 .price-filter {
   width: 143px;
+  height: 43px;
+  box-sizing: border-box;
+  margin: 0;
   background: #F2F2F2;
   border-radius: 4px;
   padding: 12px 20px 12px 20px;
-  max-height: max-content;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .filter-label {
@@ -564,7 +575,6 @@ body {
 }
 
 .price-label {
-  width: 143px;
   border-radius:  4px 0 0 4px;
   margin: 0;
   padding: 0;
@@ -574,20 +584,37 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 70px;
-
+  align-items: center;
+  text-align: center;
 }
 
 .use {
-  padding: 8px 50px 8px 50px;
-  width: 191px;
+  width: 190px;
+  box-sizing: border-box;
+  padding: 8px 25px 8px 25px;
   background: #82B3D3;
   border-radius: 4px;
-  margin-bottom: 48px;
+  margin-top: 72px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .remove {
-  width: 76px;
+  width: 190px;
+  box-sizing: border-box;
   align-self: center;
+  padding: 8px 50px 8px 50px;
+  background: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
 }
 
 .search-header {
@@ -615,9 +642,10 @@ body {
 }
 
 .search-control {
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
   background-color: #FFFFFF;
   width: 292px;
-  border-radius: 4px;
   margin-left: auto;
   padding: 14px 20px;
 }
@@ -635,7 +663,7 @@ body {
 }
 
 .grid-button {
-  display: inline;
+  display: inline-block;
   margin: 0;
   padding: 0;
   margin-right: 4px;
@@ -693,6 +721,7 @@ body {
 
 
 .product-description {
+  box-sizing: border-box;
   width: 140px;
   padding: 8px;
   background: #756157;
@@ -707,6 +736,7 @@ body {
 }
 
 .product-selected {
+  box-sizing: border-box;
   width: 140px;
   padding: 8px;
   background: #82B3D3;
@@ -721,6 +751,7 @@ body {
 }
 
 .rating {
+  box-sizing: border-box;
   width: 140px;
   padding: 8px;
   background: #F2F2F2;

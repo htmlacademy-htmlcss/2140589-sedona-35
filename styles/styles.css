@@ -440,12 +440,14 @@ body {
 .footer-social-item {
   margin: 0;
   padding: 0;
+  width: 48px;
+  height: 40px;
 }
 
 .social-link {
   box-sizing: border-box;
   display: inline-block;
-  padding: 40px 48px;
+  padding: 10px;
 }
 
 .phone-number {

@@ -333,6 +333,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
   padding: 96px 70px 104px;
 }
 
@@ -349,6 +350,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   margin: 0;
+  padding-bottom: 20px;
 }
 
 .catalog-distribution-title {
@@ -362,6 +364,9 @@ body {
 .distribution-description {
   font-size: 22px;
   line-height: 26px;
+  width: 475px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .distribution-email {
@@ -373,6 +378,7 @@ body {
   width: 452px;
   padding: 12px 20px 12px 20px;
   border: 0;
+  margin: 0;
   border-radius: 4px 0 0 4px;;
   box-sizing: border-box;
 }
@@ -419,19 +425,27 @@ body {
   margin: 0;
   padding: 0;
   justify-content: space-between;
+  align-items: center;
 }
 
-
-.footer-social {
-  margin: 0;
-  padding: 0;
-}
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.footer-social-item {
+  margin: 0;
+  padding: 0;
+}
+
+.social-link {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 40px 48px;
 }
 
 .phone-number {
@@ -445,6 +459,16 @@ body {
   padding: 0;
 }
 
+.footer-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-link {
+  display: inline;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
 .catalog-filter {
   background-image: url("../images/catalog/background-filter.jpg");
@@ -609,6 +633,7 @@ body {
 }
 
 .grid-button {
+  display: inline;
   margin: 0;
   padding: 0;
   margin-right: 4px;

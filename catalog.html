@@ -94,10 +94,10 @@
              </div>
 
               <div class="form-price">
-                <h3 class="filter-price">Стоимость, &#8381;:</h3>
-                <input class="price-filter" id="form" type="text" value="0">
+                <h3 class="title-filter-price">Стоимость, &#8381;:</h3>
+                <input class="price-filter price-start" id="form" type="text" value="0" name="min-price">
                 <label class="price-label" for="form">от</label>
-                <input class="price-filter" id="before" type="text" value="9000">
+                <input class="price-filter price-end" id="before" type="text" value="9000" name="max-price">
                 <label class="price-label" for="before">до</label>
               </div>
               <div class="filter-buttons">
@@ -137,14 +137,17 @@
               <a class="product-card-image-link" href="#">
                 <img class="product-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Амара Резорт & СПА">
               </a>
-              <a class="product-card-title-link" href="#">
-                <h3 class="product-card-title">Amara Resort & Spa</h3>
-              </a>
-              <span class="product-item">Гостиница</span>
-              <span class="product-item">от 4000 &#8381;</span>
-              <a href="#" class="product-description">Подробнее</a>
-              <a href="#" class="product-selected">в избранное</a>
-              <p class="rating">Рейтинг: 8,5</p>
+              <div class="text-content">
+                <a class="product-card-title-link" href="#">
+                  <h3 class="product-card-title">Amara Resort & Spa</h3>
+                </a>
+                <span class="product-item hotel-item">Гостиница</span>
+                <span class="product-item price-item">от 4000 &#8381;</span>
+                <a href="#" class="product-description">Подробнее</a>
+                <a href="#" class="product-selected">в избранное</a>
+                <span class="stars">Звездочки</span>  <!--Я слово звездочки потом уберу. оно мне пока для нагядности-->
+                <p class="rating">Рейтинг: 8,5</p>
+              </div>
             </li>
 
             <li class="product-card">
@@ -154,11 +157,14 @@
               <a class="product-card-title-link" href="#">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
-              <span class="product-item">Гостиница</span>
-              <span class="product-item">от 5000 &#8381;</span>
-              <a class="product-description">Подробнее</a>
-              <a class="product-selected">в избранное</a>
-              <p class="rating">Рейтинг: 9,2</p>
+              <div class="text-content">
+                <span class="product-item hotel-item">Гостиница</span>
+                <span class="product-item price-item">от 5000 &#8381;</span>
+                <a class="product-description">Подробнее</a>
+                <a class="product-selected">в избранное</a>
+                <span class="stars">Звездочки</span>
+                <p class="rating">Рейтинг: 9,2</p>
+              </div>
             </li>
 
             <li class="product-card">
@@ -168,11 +174,14 @@
               <a class="product-card-title-link" href="#">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
-              <span class="product-item">Гостиница</span>
-              <span class="product-item">от 2500 &#8381;</span>
-              <a class="product-description">Подробнее</a>
-              <a class="product-selected">в избранное</a>
-              <p class="rating">Рейтинг: 6,9</p>
+              <div class="text-content">
+                <span class="product-item hotel-item">Гостиница</span>
+                <span class="product-item price-item">от 2500 &#8381;</span>
+                <a class="product-description">Подробнее</a>
+                <a class="product-selected">в избранное</a>
+                <span class="stars">Звездочки</span>
+                <p class="rating">Рейтинг: 6,9</p>
+              </div>
             </li>
 
             <li class="product-card">
@@ -182,11 +191,14 @@
               <a class="product-card-title-link" href="#">
                 <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
-              <span class="product-item">Гостиница</span>
-              <span class="product-item">от 1500 &#8381;</span>
-              <a class="product-description">Подробнее</a>
-              <a class="product-selected">в избранное</a>
-              <p class="rating">Рейтинг: 5,0</p>
+              <div class="text-content">
+                <span class="product-item">Гостиница</span>
+                <span class="product-item">от 1500 &#8381;</span>
+                <a class="product-description">Подробнее</a>
+                <a class="product-selected">в избранное</a>
+                <span class="stars">Звездочки</span>
+                <p class="rating">Рейтинг: 5,0</p>
+              </div>
             </li>
           </ul>
 
@@ -204,7 +216,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <a class="pagination-link dots" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -231,17 +243,17 @@
               <ul class="footer-social-list">
                 <li class="footer-social-item">
                   <a class="social-link" href="https://vk.com/htmlacademy">
-                    <img class="button-social-link" src="images/common/vkontakte.svg" width="48" height="14" alt="Переход на страницу Вконтакте">
+                    <img class="button-social-link" src="images/common/vkontakte.svg" width="20" height="20" alt="Переход на страницу Вконтакте">
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="social-link" href="https://t.me/htmlacademy">
-                    <img class="button-social-link" src="images/common/telegram.svg" width="48" height="15" alt="Переход на страницу В телеграмм">
+                    <img class="button-social-link" src="images/common/telegram.svg" width="20" height="20" alt="Переход на страницу В телеграмм">
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-                    <img class="button-social-link" src="images/common/youtube.svg" width="22" height="17" alt="Переход на страницу В телеграмм">
+                    <img class="button-social-link" src="images/common/youtube.svg" width="20" height="20" alt="Переход на страницу В телеграмм">
                   </a>
                 </li>
               </ul>

@@ -316,6 +316,8 @@ body {
 }
 
 .interested-button {
+  font-family: "PT Sans", sans-serif;
+  border: none;
   width: 376px;
   margin: 0;
   padding: 8px 50px 8px 50px;
@@ -379,6 +381,10 @@ body {
 }
 
 .email {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   background: #F2F2F2;
   width: 452px;
   padding: 12px 20px 12px 20px;
@@ -532,20 +538,24 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
 }
 
 .filter-item {
   line-height: 23px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .form-price {
-  display: flex;
-  flex-direction: column;
   margin-left: auto;
 }
 
-.filter-price {
+
+
+.title-filter-price {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -555,18 +565,25 @@ body {
   margin-bottom: 32px;
 }
 
-.price-filter {
+.price-filter{
   width: 143px;
   height: 43px;
   box-sizing: border-box;
   margin: 0;
   background: #F2F2F2;
-  border-radius: 4px;
   padding: 12px 20px 12px 20px;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+}
+.price-start {
+  border-radius: 4px 0 0 4px;
+}
+
+.price-end {
+  border-radius: 0 4px 4px 0;
 }
 
 .filter-label {
@@ -581,40 +598,44 @@ body {
 }
 
 .filter-buttons {
-  display: flex;
-  flex-direction: column;
+  margin-top: 56px;
+  width: 191px;
   margin-left: 70px;
   align-items: center;
   text-align: center;
 }
 
 .use {
+  font-family: "PT Sans", sans-serif;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   width: 190px;
   box-sizing: border-box;
   padding: 8px 25px 8px 25px;
   background: #82B3D3;
   border-radius: 4px;
-  margin-top: 72px;
+  margin: 0;
   margin-bottom: 40px;
   text-transform: uppercase;
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  border: none;
 }
 
 .remove {
-  width: 190px;
-  box-sizing: border-box;
-  align-self: center;
-  padding: 8px 50px 8px 50px;
-  background: none;
-  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  width: 190px;
+  box-sizing: border-box;
+  align-self: center;
+  padding: 8px 25px 8px 25px;
+  background: none;
+  text-transform: uppercase;
   border: none;
+  margin: 0;
 }
 
 .search-header {
@@ -708,14 +729,41 @@ body {
   margin-right: 0;
 }
 
+.text-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card-image-link {
+  margin-bottom: 14px;
+}
+
+.product-card-title {
+  margin: 0;
+}
 
 .product-card-title-link {
+  justify-self: flex-start;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   text-decoration: none;
-  margin: 0;
+  margin-bottom: 16px;
+}
+
+.product-item {
+  width: 140px;
+  margin-bottom: 16px;
+}
+
+.hotel-item {
+  text-align: left;
+}
+
+.price-item {
+  text-align: right;
 }
 
 
@@ -733,6 +781,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
+  margin-bottom: 16px;
 }
 
 .product-selected {
@@ -748,9 +797,19 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.stars {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 140px;
+  text-align: start;
 }
 
 .rating {
+  margin: 0;
   box-sizing: border-box;
   width: 140px;
   padding: 8px;
@@ -792,6 +851,11 @@ body {
   background-color: #82B3D3;
   border-radius: 4px;
   text-align: center;
+}
+
+.dots {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 

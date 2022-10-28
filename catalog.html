@@ -59,16 +59,16 @@
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
              <div class="comfort-items">
               <h3 class="filter-title">Инфраструктура:</h3>
-              <ul class="filter-item">
-                <li>
+              <ul class="filter-list">
+                <li class="filter-item">
                   <input class="checkbox-button" id="pool" type="checkbox" name="pool" checked>
                   <label class="filter-label" for="pool">Бассейн</label>
                 </li>
-                <li>
+                <li class="filter-item">
                   <input class="checkbox-button" id="park" type="checkbox" name="park" checked>
                   <label class="filter-label" for="park">Парковка</label>
                 </li>
-                <li>
+                <li class="filter-item">
                   <input class="checkbox-button" id="wi-fi" type="checkbox" name="wi-fi">
                   <label class="filter-label" for="wi-fi">WI-FI</label>
                 </li>
@@ -77,16 +77,16 @@
 
              <div class="comfort-items">
               <h3 class="filter-title">Тип Жилья:</h3>
-              <ul class="filter-item">
-                <li>
+              <ul class="filter-list">
+                <li class="filter-item">
                   <input class="radio-button" id="hotel" type="radio" name="accommodation" checked>
                   <label class="filter-label" for="hotel">Гостиница</label>
                 </li>
-                <li>
+                <li class="filter-item">
                   <input class="radio-button" id="hostel" type="radio" name="accommodation">
                   <label class="filter-label" for="hostel">Мотель</label>
                 </li>
-                <li>
+                <li class="filter-item">
                   <input class="radio-button" id="flats" type="radio" name="accommodation">
                   <label class="filter-label" for="flats">Апартаменты</label>
                 </li>
@@ -95,8 +95,8 @@
 
               <div class="form-price">
                 <h3 class="title-filter-price">Стоимость, &#8381;:</h3>
-                <input class="price-filter price-start" id="form" type="text" value="0" name="min-price">
-                <label class="price-label" for="form">от</label>
+                <input class="price-filter price-start" id="from" type="text" value="0" name="min-price">
+                <label class="price-label" for="from">от</label>
                 <input class="price-filter price-end" id="before" type="text" value="9000" name="max-price">
                 <label class="price-label" for="before">до</label>
               </div>
@@ -137,16 +137,16 @@
               <a class="product-card-image-link" href="#">
                 <img class="product-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Амара Резорт & СПА">
               </a>
-              <div class="text-content">
                 <a class="product-card-title-link" href="#">
                   <h3 class="product-card-title">Amara Resort & Spa</h3>
                 </a>
-                <span class="product-item hotel-item">Гостиница</span>
-                <span class="product-item price-item">от 4000 &#8381;</span>
-                <a href="#" class="product-description">Подробнее</a>
-                <a href="#" class="product-selected">в избранное</a>
-                <span class="stars">Звездочки</span>  <!--Я слово звездочки потом уберу. оно мне пока для нагядности-->
-                <p class="rating">Рейтинг: 8,5</p>
+                <div class="text-content">
+                  <span class="product-item hotel-item">Гостиница</span>
+                  <span class="product-item price-item">от 4000 &#8381;</span>
+                  <a href="#" class="product-description">Подробнее</a>
+                  <a href="#" class="product-selected">в избранное</a>
+                  <span class="stars">Звездочки</span>
+                  <p class="rating">Рейтинг: 8,5</p>
               </div>
             </li>
 

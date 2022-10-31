@@ -56,7 +56,10 @@ body {
   box-sizing: border-box;
 }
 
-
+.navigation-logo {
+  z-index: 1;
+  margin-bottom: -10px;
+}
 
 .navigation-list {
   display: flex;
@@ -101,7 +104,7 @@ body {
 }
 
 .navigation-list-user .navigation-link {
-  padding: 18px 12px;
+  padding: 16px 12px;
 }
 
 .navigation-link-button {
@@ -136,6 +139,17 @@ body {
   padding-left: 70px;
   padding-right: 70px;
 }
+
+.main-picture::before {
+  background-image: url("../images/index/index-background-bottom.svg");
+  position: relative;
+  left: 40px;
+  display: block;
+  width: 1200px;
+  height: 57px;
+  content: "";
+}
+
 
 .welcome {
   display: block;
@@ -584,6 +598,7 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
+
 .price-end {
   border-radius: 0 4px 4px 0;
 }
@@ -688,10 +703,21 @@ body {
 .grid-button {
   display: inline-block;
   margin: 0;
-  padding: 0;
   margin-right: 4px;
   text-decoration: none;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  text-align: center;
 }
+
+.grid-button:nth-child(3) {
+  margin: 0;
+}
+
 
 .product {
   background-color: #FFFFFF;

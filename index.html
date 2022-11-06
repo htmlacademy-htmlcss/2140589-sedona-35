@@ -176,5 +176,73 @@
         </div>
       </footer>
     </div>
+    <div class="modal-container close-modal-container">
+      <div class="modal modal-search">
+        <section class="modal-content">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="dates-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="date">
+              <p class="info"> Дата Заезда:</p>
+              <label class="label-date" for="first-date">
+                <input class="date-field" type="text" id="first-day" name="first-day" value="27 апреля 2020" placeholder="Дата заезда">
+                <button type="button" class="calendar"></button>
+              </label>
+            </div>
+            <p class="proper-date wrong-message">Мы не можем отправить вас в прошлое.</p>
+            <div class="date">
+              <p class="info"> Дата Выезда:</p>
+              <label class="label-date" for="last-day">
+                <input class="date-field" type="text" id="last-day" name="last-day" value="1 сентября 2023" placeholder="Дата выезда">
+                <button type="button" class="calendar"></button>
+              </label>
+            </div>
+            <p class="proper-date correct">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="number-of-people">
+              <div class="people">
+                <p class="info"> Взрослые:</p>
+                <label class="number-label" for="number-of-adults">
+                  <button class="minus-control" type="button">
+                    <svg class="minus" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg>
+                  </button>
+                  <input class="number-field" type="text" id="number-of-adults" name="number-of-adults" value="2" placeholder="Укажите количество взрослых">
+                  <button class="plus-control" type="button">
+                    <svg class="plus" width="14" height="14" viewBox="0 0 14 14"  xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                </button>
+                </label>
+              </div>
+              <div class="people">
+                <p class="info"> Дети:</p>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/></svg>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <label class="number-label" for="number-of-children">
+                  <button class="minus-control" type="button">
+                    <svg class="minus" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                    </svg></button>
+                  <input class="number-field" type="text" id="number-of-children" name="number-of-children" value="2" placeholder="Укажите количество детей">
+                  <button class="plus-control" type="button">
+                    <svg class="plus" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                    </svg>
+                  </button>
+                </label>
+              </div>
+            </div>
+            <button class="search-button" type="submit" name="search-button" value="Найти">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

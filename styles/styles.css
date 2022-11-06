@@ -774,9 +774,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/*.close-modal-container {
+.close-modal-container {
   display: none;
-}*/
+}
 
 .modal {
   margin: auto;

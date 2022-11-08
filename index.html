@@ -86,7 +86,7 @@
             <li class="advantages-item-dark">
               <img class="bridge-picture" src="images/index/bridge.jpg" width="800" height="384" alt="моста дьявола">
               <div class="advantages-text-dark">
-                <h3 class="advantages-title-white advantages-line-white">Там есть мост дьявола</h3>
+                <h3 class="advantages-title-white advantages-line-white">Там есть <br> мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
@@ -95,7 +95,7 @@
             <li class="advantages-item advantages-facilities">
               <img class="advantages-picture" src="images/index/house.svg" width="75" height="70" alt="домик">
               <h3 class="advantages-title facilities-title">Жильё</h3>
-              <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
 
 
@@ -103,7 +103,7 @@
             <li class="advantages-item-white advantages-facilities">
               <img class="advantages-picture" src="images/index/food.svg" width="74" height="70" alt="бургер">
               <h3 class="advantages-title facilities-title">Еда</h3>
-              <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
             </li>
 
 
@@ -111,14 +111,14 @@
             <li class="advantages-item advantages-facilities">
               <img class="advantages-picture" src="images/index/present.svg" width="64" height="70" alt="подорок">
               <h3 class="advantages-title facilities-title">Сувениры</h3>
-              <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="advantages-description">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
 
         <section class="interested">
           <h3 class="interested-title">Заинтересовались?</h3>
-          <p class="interested-description">Укажите предполагаемые даты поездки,<br>  и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="interested-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="interested-button" type="button" name="interested-button" value="ПОИСК ГОСТИНИЦЫ В седоне">Поиск гостиницы в седоне</button>
         </section>
 
@@ -164,7 +164,7 @@
           </section>
           <section class="footer-contacts">
               <h2 class="visually-hidden">Контакты</h2>
-              <a class="phone-number" href="tel:+78121212">+7 (812) 812 12 12</a>
+              <a class="phone-number" href="tel:+78121212">+7 (812) 812-12-12</a>
           </section>
           <section class="footer-logo">
             <h2 class="visually-hidden">Логотип</h2>
@@ -175,6 +175,75 @@
           </section>
         </div>
       </footer>
+    </div>
+    <div class="modal-container close-modal-container">
+      <div class="modal modal-search">
+        <section class="modal-content">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="dates-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="date">
+              <label class="info" for="first-day">Дата Заезда: </label>
+              <div class="date-field-container">
+                <input class="date-field" type="text" id="first-day" name="first-day" value="27 апреля 2020" placeholder="Дата заезда">
+                <button type="button" class="calendar-control"><svg class="calendar" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><g><path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z"/><path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg></button>
+              </div>
+                <p class="proper-date wrong-message">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="date">
+              <label class="info" for="last-day"> Дата Выезда: </label>
+              <div class="date-field-container">
+                <input class="date-field" type="text" id="last-day" name="last-day" value="1 сентября 2023" placeholder="Дата выезда">
+                <button type="button" class="calendar-control"><svg class="calendar" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><g><path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z"/><path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg></button>
+              </div>
+                <p class="proper-date correct">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="number-of-people">
+              <div class="people">
+                <label class="info" for="number-of-adults"> Взрослые: </label>
+                <div class="date-field-container">
+                  <button class="minus-control" type="button">
+                    <svg class="minus" width="20" height="20" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z"/>
+                    </svg>
+                  </button>
+                  <input class="number-field" type="text" id="number-of-adults" name="number-of-adults" value="2" placeholder="Укажите количество взрослых">
+                  <button class="plus-control" type="button">
+                    <svg class="plus" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="people">
+                <label class="info" for="number-of-children">Дети: </label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/></svg>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                <div class="date-field-container">
+                  <button class="minus-control" type="button">
+                    <svg class="minus" width="20" height="20" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z"/>
+                    </svg>
+                  </button>
+                  <input class="number-field" type="text" id="number-of-children" name="number-of-children" value="2" placeholder="Укажите количество детей">
+                  <button class="plus-control" type="button">
+                    <svg class="plus" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="search-button" type="submit" name="search-button" value="Найти">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>

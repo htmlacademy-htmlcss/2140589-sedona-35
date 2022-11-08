@@ -67,6 +67,7 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-left: 27px;
   margin-right: auto;
   list-style-type: none;
   justify-content: flex-start;
@@ -127,7 +128,7 @@ body {
   line-height: 10px;
   text-align: center;
   color: #FFFFFF;
-  background: #7DB54F;
+  background-color: #7DB54F;
   border-radius: 10px;
   padding: 4px;
   position: absolute;
@@ -193,7 +194,7 @@ body {
   width: 160px;
   align-items: center;
   text-align: center;
-  background: #756157;
+  background-color: #756157;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -202,6 +203,7 @@ body {
   color: #FFFFFF;
   padding: 8px 20px;
   text-decoration: none;
+  margin-left: 22px;
 }
 
 .navigation-link-button:hover {
@@ -236,7 +238,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
-  padding-bottom: 82px;
+  padding-bottom: 80px;
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -261,7 +263,7 @@ body {
 .reason {
   margin: 0;
   text-align: center;
-  padding-top: 69px;
+  padding-top: 66px;
   padding-bottom: 90px;
   padding-left: 70px;
   padding-right: 70px;
@@ -462,7 +464,7 @@ body {
   width: 376px;
   margin: 0;
   padding: 8px 50px 8px 50px;
-  background: #756157;
+  background-color: #756157;
   border-radius: 4px;
   text-align: center;
   color: #FFFFFF;
@@ -547,14 +549,13 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   width: 452px;
   padding: 12px 20px 12px 20px;
   border: 0;
   margin: 0;
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
-
 }
 
 .email:hover {
@@ -590,7 +591,7 @@ body {
   font-family: "PT Sans", sans-serif;
   width: 232px;
   text-align: center;
-  background: #82B3D3;
+  background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
   font-weight: 700;
   font-size: 20px;
@@ -772,6 +773,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
 }
 
 .close-modal-container {
@@ -801,7 +803,7 @@ body {
   right: 0;
   width: 52px;
   height: 52px;
-  background-color: #F2F2F2;;
+  background-color: #F2F2F2;
   border: none;
   background-image: url("../images/common/close.svg");
   background-repeat: no-repeat;
@@ -854,6 +856,7 @@ body {
   padding: 0;
   height: 48px;
   position: relative;
+  margin-bottom: 48px;
 }
 
 .info {
@@ -867,7 +870,7 @@ body {
   box-sizing: border-box;
   width: 440px;
   padding: 12px 20px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   border-radius: 4px;
   border-style: none;
   font-weight: 700;
@@ -904,24 +907,58 @@ body {
   outline: none;
 }
 
-.calendar {
+.calendar-control {
   position: absolute;
-  width: 20px;
-  height: 20px;
   right: 10px;
-  top: 25px;
-  background-image: url("../images/index/calendar.svg");
-  background-repeat: no-repeat;
+  top: 16px;
   border-style: none;
-  background-position: center;
   background-color: #F2F2F2;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
+
+.calendar {
+  fill: #000000;
+  opacity: 0.3;
+}
+
+.calendar-control:hover .calendar {
+  fill: #000000;
+  opacity: 1;
+}
+
+.calendar-control:focus .calendar {
+  fill: #000000;
+  box-shadow: inset 0 0 0 2px  #83B3D3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.calendar-control:focus:not(:focus-visible) .calendar {
+  fill: #000000;
+  box-shadow: inset 0 0 0 2px  #83B3D3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.calendar-control:focus-visible .calendar {
+  fill: #000000;
+  box-shadow: inset 0 0 0 2px  #83B3D3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.calendar-control:active .calendar {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 
 .proper-date {
   font-size: 16px;
-  padding-left: 157px;
-  margin-bottom: 23px;
+  position: absolute;
+  top: 35px;
+  left: 158px;
 }
 
 .wrong-message {
@@ -951,7 +988,7 @@ body {
   box-sizing: border-box;
   height: 48px;
   width: 110px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   border-radius: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -961,11 +998,15 @@ body {
   text-align: center;
 }
 
+.date-field-container {
+  position: relative;
+}
+
 .minus-control {
   position: absolute;
   width: 40px;
   height: 48px;
-  left: 49px;
+  left: 50px;
   background-position: center;
   border-style: none;
   background-color: #F2F2F2;
@@ -990,6 +1031,7 @@ body {
   box-shadow: inset 0 0 0 2px  #83B3D3;
   border-radius: 4px;
   outline: none;
+
 }
 
 .minus-control:focus:not(:focus-visible) .minus {
@@ -1085,7 +1127,7 @@ body {
 }
 
 .tooltip-text {
-  background: #333333;
+  background-color: #333333;
   box-shadow: 0 15px 30px 0 #0000004D;
   border-radius: 10px;
   color: #ffffff;
@@ -1120,6 +1162,7 @@ body {
 
 .search-button {
   font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -1127,8 +1170,8 @@ body {
   line-height: 24px;
   margin: 0;
   border-style: hidden;
-  width: 577px;
-  background: #83B3D3;
+  width: 100%;
+  background-color: #83B3D3;
   border-radius: 10px;
   padding: 18px 0;
 }
@@ -1166,11 +1209,11 @@ body {
   background-repeat: no-repeat;
   background-color: #756157;
   color: #FFFFFF;
-  padding-top: 35px;
+  padding-top: 38px;
   padding-right: 70px;
-  padding-bottom: 35px;
+  padding-bottom: 50px;
   padding-left: 70px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .catalog-filter-form {
@@ -1202,7 +1245,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .breadcrumbs-link {
@@ -1238,7 +1281,7 @@ body {
 .arrow::before {
   content: url("../images/catalog/arrow.svg");
   position: absolute;
-  left: -15px;
+  left: -18px;
 }
 
 .filter-title {
@@ -1248,7 +1291,7 @@ body {
   text-transform: capitalize;
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .filter-list {
@@ -1278,7 +1321,7 @@ body {
 
 .price-filter-unite {
   display: flex;
-  margin-bottom: 48px;
+  margin-bottom: 46px;
 }
 
 .unite {
@@ -1288,10 +1331,9 @@ body {
 
 .price-filter{
   width: 143px;
-  height: 43px;
   box-sizing: border-box;
   margin: 0;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   padding: 12px 30px 12px 20px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -1355,7 +1397,7 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
   border: none;
@@ -1385,12 +1427,12 @@ body {
 }
 
 .toggle-min {
-  top: -8px;
+  top: -11px;
 }
 
 .toggle-max {
-  top: -8px;
-  right: -10px;
+  top: -11px;
+  right: -3px;
 }
 
 .filter-label {
@@ -1402,8 +1444,6 @@ body {
 
 .control-mark {
   position: absolute;
-  top: 2px;
-  left: 0;
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
@@ -1412,8 +1452,14 @@ body {
 
 .control-input[type="checkbox"]:checked + .control-mark::before{
   position: absolute;
-  left: calc(50% - 12.2px/2 + 0.1px);
-  content: url("../images/catalog/tick.svg");
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  background-image: url("../images/catalog/tick.svg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  top: 7px;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -1460,30 +1506,30 @@ body {
   opacity: 0.3;
 }
 
-.control-label:hover {
+.filter-label:hover {
   color: #FFFFFF;
   opacity: 0.6;
 }
 
-.control-label:focus {
+.filter-label:focus {
   color: #FFFFFF;
 }
 
-.control-label:focus:not(:focus-visible) {
+.filter-label:focus:not(:focus-visible) {
   color: #FFFFFF;
 }
 
-.control-label:focus-visible {
+.filter-label:focus-visible {
   color: #FFFFFF;
 }
 
-.control-label:active {
+.filter-label:active {
   color: #FFFFFF;
   opacity: 0.3;
 }
 
-.control-label:disabled,
-.control-label:disabled:hover {
+.filter-label:disabled,
+.filter-label:disabled:hover {
   color:  #FFFFFF;
   opacity: 0.3;
 }
@@ -1500,8 +1546,8 @@ body {
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
   position: absolute;
-  right: 10px;
-  top: 9px;
+  right: 17px;
+  top: 11px;
 }
 
 
@@ -1522,10 +1568,10 @@ body {
   width: 190px;
   box-sizing: border-box;
   padding: 8px 25px 8px 25px;
-  background: #82B3D3;
+  background-color: #82B3D3;
   border-radius: 4px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   border: none;
 }
@@ -1611,7 +1657,7 @@ body {
   margin: 0;
   padding-left: 70px;
   padding-right: 70px;
-  margin-bottom: 50px;
+  margin-bottom: 36px;
 }
 
 .search {
@@ -1684,6 +1730,10 @@ body {
   margin-left: auto;
 }
 
+.grid-button:first-child {
+  margin-left: 16px;
+}
+
 .grid-button {
   display: inline-block;
   margin: 0;
@@ -1744,13 +1794,13 @@ body {
 .product-card-title {
   margin: 0;
   margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .product-card-title-link {
   justify-self: flex-start;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
   color: #000000;
   text-decoration: none;
   margin-bottom: 16px;
@@ -1775,7 +1825,7 @@ body {
   box-sizing: border-box;
   width: 140px;
   padding: 8px;
-  background: #756157;
+  background-color: #756157;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -1813,7 +1863,7 @@ body {
   box-sizing: border-box;
   width: 140px;
   padding: 8px;
-  background: #82B3D3;
+  background-color: #82B3D3;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -1881,7 +1931,7 @@ body {
   box-sizing: border-box;
   width: 140px;
   padding: 8px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
@@ -1898,7 +1948,7 @@ body {
   list-style-type: none;
   margin-top: 80px;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .pagination::before {
@@ -1908,7 +1958,7 @@ body {
   border: 1px solid #E6E6E6;
   transform: rotate(180deg);
   content: "";
-  top: -40px;
+  top: -45px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1974,7 +2024,7 @@ body {
 
 
 .pagination-link-current {
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #000000;
   display: block;
   box-sizing: border-box;
@@ -1985,7 +2035,6 @@ body {
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
-  background: #F2F2F2;
   border-radius: 4px;
   text-align: center;
 }

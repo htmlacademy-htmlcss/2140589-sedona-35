@@ -26,7 +26,7 @@ body {
   color: #333333;
   margin: 0;
   min-height: 100%;
-  width: 1280;
+  width: 1280px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -912,7 +912,7 @@ body {
   right: 10px;
   top: 16px;
   border-style: none;
-  background-color: #F2F2F2;
+  background-color: initial;
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -1459,7 +1459,7 @@ body {
   background-repeat: no-repeat;
   width: 12px;
   height: 12px;
-  top: 7px;
+  top: 4px;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -1624,18 +1624,21 @@ body {
 }
 
 .remove:focus {
-  border: 3px solid #83B3D3;
+  box-shadow: inset 0 0 0 2px  #83B3D3;
   border-radius: 4px;
+  outline: none;
 }
 
 .remove:focus:not(:focus-visible) {
-  border: 3px solid #83B3D3;
+  box-shadow: inset 0 0 0 2px  #83B3D3;
   border-radius: 4px;
+  outline: none;
 }
 
 .remove:focus-visible {
-  border: 3px solid #83B3D3;
+  box-shadow: inset 0 0 0 2px  #83B3D3;
   border-radius: 4px;
+  outline: none;
 }
 
 .remove:disabled,
@@ -1686,6 +1689,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  background-color: #ffffff;
 }
 
 .search-control:hover {
@@ -1874,6 +1878,10 @@ body {
   text-decoration: none;
   margin-bottom: 16px;
   cursor: pointer;
+}
+
+.chosen {
+  background-color: #7DB54F;;
 }
 
 .product-selected:hover {

@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -54,6 +47,9 @@ body {
 
 .page-header {
   background-color: #ffffff;
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .navigation {
@@ -66,8 +62,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  padding-left: 70px;
-  padding-right: 70px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -208,9 +202,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 160px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   background-color: #756157;
   border-radius: 4px;
@@ -230,10 +221,12 @@ body {
 
 .navigation-link-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .navigation-link-button:focus-visible {
   background-color: #615048;
+  outline: none;
 }
 
 
@@ -330,9 +323,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -366,9 +356,13 @@ body {
 
 .advantages-text-dark {
   width: 400px;
+  padding-top: 92px;
+  padding-bottom: 111px;
 }
 
 .sight-picture {
+  width: 800px;
+  object-fit: cover;
   height: 100%;
 }
 
@@ -382,9 +376,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -403,9 +394,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -422,7 +410,6 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   width: 175px;
-  padding-top: 92px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
@@ -867,6 +854,7 @@ body {
   background-position: center;
   cursor: pointer;
   border-radius: 50%;
+  right: -18px;
 }
 
 .modal-close-button:hover {
@@ -915,9 +903,8 @@ body {
           justify-content: space-between;
   margin: 0;
   padding: 0;
-  height: 48px;
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 23px;
 }
 
 .info {
@@ -925,6 +912,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+  max-width: 120px;
 }
 
 .date-field {
@@ -968,8 +956,8 @@ body {
 
 .calendar-control {
   position: absolute;
-  right: 10px;
-  top: 16px;
+  right: 20px;
+  top: 15px;
   border-style: none;
   background-color: initial;
   cursor: pointer;
@@ -1010,9 +998,9 @@ body {
 
 .proper-date {
   font-size: 16px;
-  position: absolute;
-  top: 35px;
-  left: 158px;
+  margin: 0;
+  margin-top: 4px;
+  margin-left: 158px;
 }
 
 .wrong-message {
@@ -1081,8 +1069,8 @@ body {
 .minus {
   fill: rgba(117, 97, 87, 0.3);
   position: absolute;
-  left: 10px;
-  top: 13px;
+  left: 6px;
+  top: 14px;
   width: 20px;
   height: 20px;
 }
@@ -1469,12 +1457,14 @@ body {
 .range-toggle:focus {
   color: #ffffff;
   border: 3px solid #83b3d3;
+  outline: none;
 }
 
 
 .range-toggle:focus-visible {
   color: #ffffff;
   border: 3px solid #83b3d3;
+  outline: none;
 }
 
 .range-toggle:active {
@@ -1521,6 +1511,11 @@ body {
   top: 4px;
 }
 
+.control-input[type="checkbox"]:focus + .control-mark {
+  -webkit-box-shadow:  0 0 0 3px #83b3d3;
+          box-shadow:  0 0 0 3px #83b3d3;
+}
+
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
@@ -1536,24 +1531,22 @@ body {
   content: "";
 }
 
+.control-input[type="radio"]:focus + .control-mark {
+  -webkit-box-shadow:  0 0 0 3px #83b3d3;
+          box-shadow:  0 0 0 3px #83b3d3;
+}
 
-.control-mark:hover {
+.control-input[type="radio"]:disabled + .control-mark {
+  background-color: #e5e5e5;
+}
+
+.filter-item:hover .control-mark {
   background-color: #ffffff;
   opacity: 0.6;
 }
 
-.control-mark:focus {
-  -webkit-box-shadow: inset 0 0 0 3px #83b3d3;
-          box-shadow: inset 0 0 0 3px #83b3d3;
-}
 
-
-.control-mark:focus-visible {
-  -webkit-box-shadow: inset 0 0 0 3px #83b3d3;
-          box-shadow: inset 0 0 0 3px #83b3d3;
-}
-
-.control-mark:active {
+.filter-item:active .control-mark {
   background-color: #ffffff;
   opacity: 0.3;
 }
@@ -1635,10 +1628,12 @@ body {
 
 .use:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .use:focus-visible {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .use:disabled,
@@ -1711,7 +1706,7 @@ body {
   margin: 0;
   padding-left: 70px;
   padding-right: 70px;
-  margin-bottom: 38px;
+  margin-bottom: 31px;
 }
 
 .search {
@@ -1722,7 +1717,7 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
-  padding-right: 150px;
+  margin-right: auto;
   padding-top: 7px;
 }
 
@@ -1744,6 +1739,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   background-color: #ffffff;
+  max-height: 49px;
 }
 
 .search-control:hover {
@@ -1785,7 +1781,7 @@ body {
 .grid-buttons {
   padding: 0;
   margin: 0;
-  margin-left: auto;
+  margin-left: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1794,10 +1790,11 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  max-width: 165px;
 }
 
 .grid-button:first-child {
-  margin-left: 22px;
+  margin-left: 0;
 }
 
 .grid-button {
@@ -1813,6 +1810,7 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   text-align: center;
+  margin-bottom: 7px;
 }
 
 
@@ -1820,12 +1818,16 @@ body {
   border: solid 2px #000000;
 }
 
+.grid-button:focus {
+  border: solid 2px #68a2ca;
+  outline: none;
+}
 
 .product {
   background-color: #ffffff;
   width: 1060px;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 52px;
   padding: 0 70px;
 }
 
@@ -1917,11 +1919,13 @@ body {
 
 .product-description:focus {
   background-color: #615048;
+  outline: none;
 }
 
 
 .product-description:focus-visible {
   background-color: #615048;
+  outline: none;
 }
 
 .product-description:active {
@@ -1957,11 +1961,13 @@ body {
 
 .product-selected:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 
 .product-selected:focus-visible {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .product-selected:active {
@@ -2062,6 +2068,7 @@ body {
   background-color: #82b3d3;
   border-radius: 4px;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .pagination-link:hover {

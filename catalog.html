@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/common/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -47,6 +48,7 @@
           </ul>
         </nav>
       </header>
+
       <main class="main-index">
         <section class="catalog-filter">
             <h1 class="cataloge-filter-title">Гостиницы Седоны </h1>
@@ -62,79 +64,76 @@
             </ul>
 
             <h2 class="visually-hidden">Фильтр</h2>
-
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="comfort-items">
-              <h3 class="filter-title">Инфраструктура:</h3>
-              <ul class="filter-list">
-                <li class="filter-item">
-                  <input class="visually-hidden control-input" id="pool" type="checkbox" name="pool" checked>
-                  <span class="control-mark"></span>
-                  <label class="filter-label" for="pool">Бассейн</label>
-                </li>
-                <li class="filter-item">
-                    <input class="visually-hidden control-input" id="park" type="checkbox" name="park" checked>
+              <div class="comfort-items">
+                <h3 class="filter-title">Инфраструктура:</h3>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <input class="visually-hidden control-input" id="pool" type="checkbox" name="pool" checked>
                     <span class="control-mark"></span>
-                    <label class="filter-label" for="park">Парковка</label>
-                </li>
-                <li class="filter-item">
-                    <input class="visually-hidden control-input" id="wi-fi" type="checkbox" name="wi-fi">
-                    <span class="control-mark"></span>
-                    <label class="filter-label" for="wi-fi">WI-FI</label>
-                </li>
-              </ul>
-            </div>
-
-            <div class="comfort-items">
-              <h3 class="filter-title">Тип Жилья:</h3>
-              <ul class="filter-list">
-                <li class="filter-item">
-                    <input class="visually-hidden control-input" id="hotel" type="radio" value="hotel" name="accommodation" checked>
-                    <span class="control-mark"></span>
-                    <label class="filter-label" for="hotel">Гостиница</label>
-                </li>
-                <li class="filter-item">
-                    <input class="visually-hidden control-input" id="hostel" type="radio" value="hostel" name="accommodation">
-                    <span class="control-mark"></span>
-                    <label class="filter-label" for="hostel">Мотель</label>
-                </li>
-                <li class="filter-item">
-                    <input class="visually-hidden control-input" id="flats" type="radio" value="flats" name="accommodation">
-                    <span class="control-mark"></span>
-                    <label class="filter-label" for="flats">Апартаменты</label>
-                </li>
-              </ul>
-            </div>
-
-              <div class="form-price">
-                <h3 class="title-filter-price">Стоимость, &#8381;:</h3>
-                <div class="price-filter-unite">
-                  <div class="unite">
-                    <input class="price-filter price-start" id="from" type="text" value="0" name="min-price">
-                    <label class="price-label" for="from">от</label>
-                  </div>
-                  <div class="unite">
-                    <input class="price-filter price-end" id="before" type="text" value="9000" name="max-price">
-                    <label class="price-label" for="before">до</label>
-                  </div>
-                </div>
-                <div class="range">
-                    <div class="range-scale">
-                      <div class="range-bar" style="width: 226px">
-                        <button class="range-toggle toggle-min" type="button">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                      </button>
-                        <button class="range-toggle toggle-max" type="button">
-                          <span class="visually-hidden">Изменить максимальную цену.</span>
-                        </button>
-                      </div>
+                    <label class="filter-label" for="pool">Бассейн</label>
+                  </li>
+                  <li class="filter-item">
+                      <input class="visually-hidden control-input" id="park" type="checkbox" name="park" checked>
+                      <span class="control-mark"></span>
+                      <label class="filter-label" for="park">Парковка</label>
+                  </li>
+                  <li class="filter-item">
+                      <input class="visually-hidden control-input" id="wi-fi" type="checkbox" name="wi-fi">
+                      <span class="control-mark"></span>
+                      <label class="filter-label" for="wi-fi">WI-FI</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="comfort-items">
+                <h3 class="filter-title">Тип Жилья:</h3>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                      <input class="visually-hidden control-input" id="hotel" type="radio" value="hotel" name="accommodation" checked>
+                      <span class="control-mark"></span>
+                      <label class="filter-label" for="hotel">Гостиница</label>
+                  </li>
+                  <li class="filter-item">
+                      <input class="visually-hidden control-input" id="hostel" type="radio" value="hostel" name="accommodation">
+                      <span class="control-mark"></span>
+                      <label class="filter-label" for="hostel">Мотель</label>
+                  </li>
+                  <li class="filter-item">
+                      <input class="visually-hidden control-input" id="flats" type="radio" value="flats" name="accommodation">
+                      <span class="control-mark"></span>
+                      <label class="filter-label" for="flats">Апартаменты</label>
+                  </li>
+                </ul>
+              </div>
+                <div class="form-price">
+                  <h3 class="title-filter-price">Стоимость, &#8381;:</h3>
+                  <div class="price-filter-unite">
+                    <div class="unite">
+                      <input class="price-filter price-start" id="from" type="text" value="0" name="min-price">
+                      <label class="price-label" for="from">от</label>
                     </div>
+                    <div class="unite">
+                      <input class="price-filter price-end" id="before" type="text" value="9000" name="max-price">
+                      <label class="price-label" for="before">до</label>
+                    </div>
+                  </div>
+                  <div class="range">
+                      <div class="range-scale">
+                        <div class="range-bar" style="width: 226px">
+                          <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                          <button class="range-toggle toggle-max" type="button">
+                            <span class="visually-hidden">Изменить максимальную цену.</span>
+                          </button>
+                        </div>
+                      </div>
+                  </div>
                 </div>
-              </div>
-              <div class="filter-buttons">
-                <button class="use" type="submit" value="Применить">Применить</button>
-                <button class="remove" type="reset" value="Применить">Сбросить</button>
-              </div>
+                <div class="filter-buttons">
+                  <button class="use" type="submit" value="Применить">Применить</button>
+                  <button class="remove" type="reset" value="Применить">Сбросить</button>
+                </div>
             </form>
         </section>
 
@@ -183,7 +182,6 @@
                   <p class="rating">Рейтинг: 8,5</p>
               </div>
             </li>
-
             <li class="product-card">
               <a class="product-card-image-link" href="#">
                 <img class="product-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Виллас эт Поко Диабло.">
@@ -200,7 +198,6 @@
                 <p class="rating">Рейтинг: 9,2</p>
               </div>
             </li>
-
             <li class="product-card">
               <a class="product-card-image-link" href="#">
                 <img class="product-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Дезерт Квэил Инн.">
@@ -217,7 +214,6 @@
                 <p class="rating">Рейтинг: 6,9</p>
               </div>
             </li>
-
             <li class="product-card">
               <a class="product-card-image-link" href="#">
                 <img class="product-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="ГринТрии Шнн.">
